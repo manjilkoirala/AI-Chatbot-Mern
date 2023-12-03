@@ -5,6 +5,7 @@ import CustomTextField from "../../shared/CustomTextField";
 import { useAuth } from "../../../context/authContext";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
+
 function Login() {
   const auth= useAuth();
   const[email,setEmail]= useState(null)
@@ -16,7 +17,7 @@ function Login() {
       toast.loading("Logging in...",{id:"login"});
       
       await auth.login(email,password);
-      console.log("manjil"); 
+      
       toast.success("Logged in successfully",{id:"login"});
 
     }catch(err){
@@ -26,9 +27,9 @@ function Login() {
 
   return (
    
-    <div className="lg:flex lg:items-center lg:justify-center  bg-primary w-full">
-      <div className="flex flex-wrap h-screen w-full  lg:justify-normal justify-center">
-        <div className="hidden lg:flex items-center sm:justify-end">
+    <div className="lg:flex lg:items-center lg:justify-center h-[calc(100vh-112px)] overflow-hidden  bg-primary w-full">
+      <div className="flex flex-wrap  w-full  lg:justify-normal justify-center">
+        <div className="hidden lg:flex items-center lg:justify-end">
           <img
             className="w-max h-max object-cover sm:h-4/6"
             src={Robot}
@@ -36,8 +37,8 @@ function Login() {
           />
         </div>
 
-        <div className="bg-gray-800 flex flex-col my-24  rounded-xl justify-center">
-          <div className=" bg-grey-900 ss:w-[500px] px-8 rounded-lg ">
+        
+          <div className="lg:py-0 py-4 bg-grey-900 ss:w-[500px] px-8  bg-gray-800  flex flex-col my-24  rounded-xl justify-center">
             <h2 className="text-4xl dark:text-white font-bold text-center">
             Login
             </h2>
@@ -70,7 +71,7 @@ function Login() {
           </div>
         </div>
       </div>
-    </div>
+   
   
   );
 }

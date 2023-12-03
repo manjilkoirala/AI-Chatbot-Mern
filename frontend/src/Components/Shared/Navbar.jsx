@@ -2,12 +2,12 @@ import React from "react";
 import Logo from "../../assets/Logo.png";
 import LogoMob from "../../assets/LogoMobile.png";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../Context/authContext";
+import { useAuth } from "../../context/authContext";
 import NavLink from "./NavLink";
 const Navbar = () => {
   const auth = useAuth();
   return (
-    <div className="px-6 sm:px-24 py-10 h-16 bg-primary flex items-center justify-between w-full">
+    <div className="px-6 sm:px-24 h-28 bg-primary flex items-center justify-between w-screen">
       <Link to="/">
         <img src={Logo} alt="Logo" className=" hidden sm:block w-64" />
         <img src={LogoMob} alt="Logo" className="sm:hidden block w-10" />
