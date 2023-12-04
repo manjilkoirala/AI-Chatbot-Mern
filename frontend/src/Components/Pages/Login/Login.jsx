@@ -2,7 +2,7 @@
 import Robot from "../../../assets/robot.png";
 import { Link } from "react-router-dom";
 import CustomTextField from "../../shared/CustomTextField";
-import { useAuth } from "../../../context/authContext";
+import { useAuth } from "../../../Context/AuthContext";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
 
@@ -27,7 +27,7 @@ function Login() {
 
   return (
    
-    <div className="lg:flex lg:items-center lg:justify-center h-[calc(100vh-112px)] overflow-hidden  bg-primary w-full">
+    <div className="lg:flex lg:items-center lg:justify-center h-[calc(100vh-112px)] overflow-hidden w-full">
       <div className="flex flex-wrap  w-full  lg:justify-normal justify-center">
         <div className="hidden lg:flex items-center lg:justify-end">
           <img

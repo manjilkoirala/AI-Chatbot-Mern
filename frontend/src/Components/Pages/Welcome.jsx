@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 const Welcome = () => (
-  <section id="home" className="bg-primary flex items-center md:items-stretch justify-between sm:py-16 py-6 h-[calc(100vh-112px)] w-screen overflow-hidden z-[-3]">
+  <section id="home" className="flex items-center md:items-stretch justify-between sm:py-16 py-6 h-[calc(100vh-112px)] w-screen overflow-hidden">
   <div className=" flex items-start flex-col  sm:px-24 px-6">
     <div className="flex flex-row w-full">
       <h1 className="font-poppins font-semibold ss:text-[72px] text-[42px] text-white ss:leading-[80px]">
@@ -33,9 +33,9 @@ const Welcome = () => (
       alt="Robot"
       className="relative z-[1] h-[110%]  lg:right-40 "
     />
-    <div className="absolute z-[0] w-[22%] h-[35%] top-16 pink__gradient"></div>
-    <div className="absolute z-[0] w-[35%] h-[40%] bottom-20 right-20  white__gradient "></div>
-    <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient  "></div>
+    <div className="absolute  z-[0] w-[22%] h-[35%] top-20 pink__gradient"></div>
+    <div className="absolute   z-[0] w-[35%] h-[30%] bottom-16 right-20  white__gradient "></div>
+    <div className="absolute  z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient  "></div>
     
   </div>
 </section>

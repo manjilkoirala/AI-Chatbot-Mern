@@ -5,7 +5,7 @@ import CustomTextField from "../../shared/CustomTextField";
 function SignUp() {
   return (
     
-    <div className="lg:flex lg:items-center lg:justify-center h-[calc(100vh-112px)] overflow-hidden  bg-primary w-full">
+    <div className="lg:flex lg:items-center lg:justify-center h-[calc(100vh-112px)] overflow-hidden w-full">
       <div className="flex flex-wrap  w-full  lg:justify-normal justify-center">
         <div className="hidden lg:flex items-center lg:justify-end">
           <img

@@ -7,7 +7,7 @@ import NavLink from "./NavLink";
 const Navbar = () => {
   const auth = useAuth();
   return (
-    <div className="px-6 sm:px-24 h-28 bg-primary flex items-center justify-between w-screen">
+    <div className="px-6 sm:px-24 h-28 flex items-center justify-between w-screen">
       <Link to="/">
         <img src={Logo} alt="Logo" className=" hidden sm:block w-64" />
         <img src={LogoMob} alt="Logo" className="sm:hidden block w-10" />
@@ -17,7 +17,7 @@ const Navbar = () => {
             <>
               <NavLink
                 bg="bg-[#00FFFC]"
-                to="/chat"
+                to="/home"
                 text="Chat"
                 textColor="text-black"
               />
