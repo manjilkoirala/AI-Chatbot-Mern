@@ -5,6 +5,6 @@ import chatsRoutes from "./chats-routes.js";
 const appRouter = Router();
 
 appRouter.use("/user",userRoutes) //domain/api/v1/user
-appRouter.use("/chats",chatsRoutes) //domain/api/v1/chats
+appRouter.use("/chat",chatsRoutes) //domain/api/v1/chats
 
 export default appRouter

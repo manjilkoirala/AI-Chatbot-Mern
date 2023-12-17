@@ -35,3 +35,24 @@ throw new Error("Unable to authenticate")
   }
   
 }
+
+export const sendChatRequest = async (message) => {
+  
+  
+  const response = await axios.post("/chat/new",{message})
+
+  
+  
+  if (response.status === 200) {
+    
+   
+   
+    return response.data;
+    
+   
+  }else{
+    
+throw new Error("Unable to send chat")
+  }
+  
+}
