@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../assets/Logo.png";
 import LogoMob from "../../assets/LogoMobile.png";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../Context/AuthContext";
 import NavLink from "./NavLink";
 const Navbar = () => {
   const auth = useAuth();
