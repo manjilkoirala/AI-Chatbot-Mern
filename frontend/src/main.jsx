@@ -4,7 +4,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
 import Layout from "./Layout.jsx";
-import { AuthProvider } from "./context/authContext";
+import { AuthProvider } from "./Context/AuthContext.jsx";
 axios.defaults.baseURL = "http://localhost:5000/api/v1";
 axios.defaults.withCredentials = true;
 ReactDOM.createRoot(document.getElementById("root")).render(
